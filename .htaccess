@@ -1,0 +1,44 @@
+﻿# Turn Rewrite Engine On
+RewriteEngine on
+
+# Rewrite for index.php
+RewriteRule ^TOS-Adventure-Pacet index.php [NC,L]
+
+# Rewrite for contact.php
+RewriteRule ^kontak-dan-reservasi contact.php [NC,L]
+
+# Rewrite for rafting.php
+RewriteRule ^tos-rafting-Pacet rafting.php [NC,L]
+
+# Rewrite for paket_outbound.php
+RewriteRule ^tos-outbound-Pacet paket_outbound.php [NC,L]
+
+# Rewrite for outbound_fun.php
+RewriteRule ^tos-fun-outbound-Pacet outbound_fun.php [NC,L]
+
+# Rewrite for outbound_adventure.php
+RewriteRule ^tos-fun-adventure-outbound-Pacet outbound_adventure.php [NC,L]
+
+# Rewrite for outbound_motivasi.php
+RewriteRule ^tos-outbound-motivasi-Pacet outbound_motivasi.php [NC,L]
+
+# Rewrite for family_gath.php
+RewriteRule ^tos-family-gathering-Pacet family_gath.php [NC,L]
+
+# Rewrite for tos_travel.php
+RewriteRule ^info-travel-&-outing tos_travel.php [NC,L]
+
+# Rewrite for tos_eo.php
+RewriteRule ^info-event-organizer tos_eo.php [NC,L]
+
+# Rewrite for paintball.php
+RewriteRule ^tos-paintball-Pacet paintball.php [NC,L]
+
+# Rewrite for villa_pacet.php
+RewriteRule ^sewa-villa-Pacet villa_pacet.php [NC,L]
+
+# Rewrite for jurnal_klien.php
+RewriteRule ^Jurnal-klien-TOS-Adventure-Pacet jurnal_klien.php [NC,L]
+
+# Rewrite for tentang_kami.php
+RewriteRule ^tentang-TOS-Adventure-Pacet tentang_kami.php [NC,L]
