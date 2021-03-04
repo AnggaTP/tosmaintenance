@@ -1,0 +1,1102 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+    scroll-behavior: smooth;
+    font-display: swap;
+    /* background-color: #f6f6f6; */
+    color: #333333;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.fa {
+    font-size: 45px;
+    color: rgba(211, 84, 0, 1);
+}
+
+.circle-icon {
+    border: 3px solid rgba(211, 84, 0, 1);
+    padding: 15px;
+    border-radius: 50%;
+}
+
+button {
+    border: 3px solid rgba(211, 84, 0, 1);
+    background: rgba(211, 84, 0, 1);
+    color: #f6f6f6;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btn-segar {
+    background: rgba(41, 128, 185, 1);
+    border: 3px solid rgba(41, 128, 185, 1);
+}
+
+.btn-utama {
+    border: 3px solid rgba(211, 84, 0, 1);
+    background: rgba(211, 84, 0, 1);
+    color: #f6f6f6;
+    padding: 5px;
+    cursor: pointer;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.btn-biru {
+    border: 3px solid rgba(41, 128, 185, 1);
+    background: rgba(41, 128, 185, 1);
+    color: #f6f6f6;
+    padding: 5px;
+    cursor: pointer;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.not-active {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+}
+
+.line {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.line img {
+    width: 250px !important;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    height: 70px;
+    z-index: 1;
+}
+
+header a {
+    color: #f6f6f6;
+    text-decoration: none;
+}
+
+header nav {
+    padding: 10px;
+    margin-right: 30px;
+}
+
+header nav ul {
+    list-style-type: none;
+    float: right;
+}
+
+header nav ul li {
+    float: left;
+    border-bottom: 2px solid #000;
+    border-bottom-left-radius: 50px 20px;
+    padding-bottom: 5px;
+    margin-left: 10px
+}
+
+header nav ul li a {
+    color: #000;
+    padding: 0 20px;
+    font-size: 13px;
+    font-weight: 700
+}
+
+header #logo img {
+    width: 300px
+}
+
+header a:hover {
+    color: brown;
+    font-weight: bolder
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block
+}
+
+.dropdown .fa {
+    font-size: 15px !important
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+    padding: 8px 10px;
+    z-index: 1
+}
+
+.dropdown-content a {
+    color: #000 !important;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 12px
+}
+
+.dropdown-content a:hover {
+    color: brown !important;
+    font-weight: bolder
+}
+
+.dropdown:hover .dropdown-content {
+    display: block
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background: rgba(211, 84, 0, .9);
+    color: #f6f6f6
+}
+
+.sticky nav ul {
+    list-style-type: none;
+    float: right;
+    width: auto
+}
+
+.sticky nav ul li {
+    float: left;
+    border-bottom: 0;
+    border-bottom-left-radius: 50px 20px;
+    padding-bottom: 0;
+    margin-bottom: 0
+}
+
+.sticky a {
+    color: #f6f6f6
+}
+
+.sticky #logo img {
+    width: 135px
+}
+
+.sticky .dropdown .fa {
+    color: #f6f6f6
+}
+
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: .9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: .5s
+}
+
+.side-menu a {
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #f6f6f6;
+    display: block;
+    transition: .3s
+}
+
+.side-menu a:hover {
+    color: rgba(211, 84, 0, .8)
+}
+
+.side-menu .btn-close {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 22px;
+    margin-left: 50px
+}
+
+#banner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-clip-path: polygon(16% 0, 53% 13%, 100% 18%, 100% 86%, 70% 100%, 40% 91%, 0 100%, 0 0);
+    clip-path: polygon(16% 0, 53% 13%, 100% 18%, 100% 86%, 70% 100%, 40% 91%, 0 100%, 0 0);
+    background: linear-gradient(rgba(44, 62, 80, .6), rgba(44, 62, 80, 1)), url(img/wow-min.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    top: 0;
+    text-align: center;
+    color: #f6f6f6
+}
+
+#banner .container {
+    height: 100%
+}
+
+#banner h1 {
+    margin-top: 275px;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#banner p {
+    font-size: 22px;
+}
+
+#banner a {
+    font-size: 15px;
+}
+
+#banner .p2 {
+    font-size: 17px !important;
+}
+
+#boxes {
+    margin: 50px;
+    margin-top: 80px;
+}
+
+#boxes span:hover,
+circle-icon,
+fa {
+    transform: scale(1.43);
+    transition: transform .2s ease-out;
+    color: rgba(44, 62, 80, 1);
+    background: rgba(211, 84, 0, 1);
+    border: none;
+}
+
+#boxes h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#boxes h3 {
+    text-align: center;
+    font-size: 18px;
+}
+
+#boxes p {
+    text-align: center;
+    font-size: 13px;
+    line-height: 2
+}
+
+#boxes .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-column-gap: 30px;
+    padding: 10px
+}
+
+#boxes .box {
+    text-align: center;
+    padding: 10px
+}
+
+#product {
+    margin: 50px;
+    margin-top: 80px;
+}
+
+#product h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#product .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-auto-rows: auto;
+    padding: 10px;
+}
+
+#product .box {
+    text-align: center;
+    padding: 10px
+}
+
+#product img {
+    width: 250px
+}
+
+#product img:hover {
+    transform: scale(1.2);
+    transition: transform .2s ease-out
+}
+
+#product h2 {
+    text-align: center;
+    font-size: 17px;
+}
+
+#client {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    -webkit-clip-path: polygon(40% 0, 67% 13%, 100% 21%, 100% 90%, 73% 100%, 32% 93%, 0 100%, 0 70%, 0 35%, 0 0);
+    clip-path: polygon(40% 0, 67% 13%, 100% 21%, 100% 90%, 73% 100%, 32% 93%, 0 100%, 0 70%, 0 35%, 0 0);
+    background: linear-gradient(rgba(44, 62, 80, .9), rgba(44, 62, 80, 1));
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    top: 0;
+    text-align: center;
+    color: #f6f6f6;
+    margin-top: 100px;
+}
+
+#client h2 {
+    margin-top: 150px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#client p {
+    font-size: 16px;
+}
+
+#tamu {
+    margin: 50px;
+    margin-top: 80px;
+}
+
+#tamu h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#tamu h3 {
+    text-align: center;
+    font-size: 18px;
+}
+
+#tamu p {
+    text-align: center;
+    font-size: 13px;
+    line-height: 2;
+}
+
+#tamu .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-auto-rows: auto;
+    padding: 10px;
+}
+
+#tamu .container h3 {
+    text-align: center;
+    font-size: 15px;
+}
+
+#tamu .container p {
+    text-align: justify;
+    font-size: 13px;
+    line-height: 2;
+}
+
+#tamu .box {
+    text-align: center;
+    padding: 10px
+}
+
+#tamu img {
+    width: 350px;
+}
+
+#tamu img:hover {
+    transform: scale(1.2);
+    transition: transform .2s ease-out
+}
+
+.selengkapnya-journey button {
+    text-align: center;
+    font-size: 16px;
+    background-color: rgba(41, 128, 185, 1);
+    border: none
+}
+
+.selengkapnya-journey {
+    text-align: center;
+    margin: 20px
+}
+
+#contact {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    -webkit-clip-path: polygon(40% 0, 67% 13%, 100% 21%, 100% 90%, 73% 100%, 32% 93%, 0 100%, 0 70%, 0 35%, 0 0);
+    clip-path: polygon(40% 0, 67% 13%, 100% 21%, 100% 90%, 73% 100%, 32% 93%, 0 100%, 0 70%, 0 35%, 0 0);
+    z-index: -1;
+    background: linear-gradient(rgba(44, 62, 80, .9), rgba(44, 62, 80, 1));
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    top: 0;
+    text-align: center;
+    color: #f6f6f6;
+    margin-top: 80px;
+}
+
+#contact h2 {
+    margin-top: 35px;
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: left;
+    color: rgba(211, 84, 0, 1);
+}
+
+#contact p {
+    font-size: 16px;
+}
+
+#contact .box-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-flow: dense;
+    grid-column-gap: 10px;
+    padding: 5px;
+    text-align: left
+}
+
+#contact .box-grid .box img {
+    width: 80%;
+}
+
+#contact ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+#contact ul li {
+    color: #f6f6f6;
+    font-size: 15px;
+    padding-bottom: 18px;
+}
+
+#contact .fa {
+    font-size: 15px !important
+}
+
+#contact .box-sosmed .fa {
+    font-size: 30px !important
+}
+
+#contact .box-sosmed ul li {
+    float: left;
+    margin-right: 20px
+}
+
+#contact .box-sosmed ul li a {
+    text-decoration: none;
+}
+
+#contact .box-sosmed ul li a p {
+    color: #f6f6f6;
+    font-size: 10px;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+    bottom: 0;
+    -webkit-clip-path: polygon(56% 0, 79% 3%, 100% 0, 100% 100%, 78% 96%, 50% 100%, 35% 98%, 0 100%, 0 0, 34% 4%);
+    clip-path: polygon(56% 0, 79% 3%, 100% 0, 100% 100%, 78% 96%, 50% 100%, 35% 98%, 0 100%, 0 0, 34% 4%);
+    background: rgba(44, 62, 80, 1)
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-auto-flow: dense;
+    grid-column-gap: 10px;
+    padding: 5px
+}
+
+footer .box {
+    padding: 10px
+}
+
+footer h1 {
+    margin-top: 20px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #f6f6f6;
+    text-align: center;
+}
+
+footer h3 {
+    color: #f6f6f6;
+    font-size: 16px;
+}
+
+footer ul {
+    padding-left: 0;
+    list-style-type: none
+}
+
+footer ul li {
+    color: #f6f6f6;
+    font-size: 14px;
+    padding-bottom: 10px
+}
+
+footer ul li a {
+    color: #ff4500;
+    font-size: 14px;
+    padding-bottom: 10px;
+    font-weight: 700;
+    text-decoration: none
+}
+
+footer .fa {
+    font-size: 15px !important
+}
+
+#title-halaman {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    -webkit-clip-path: polygon(18% 0, 45% 31%, 86% 37%, 100% 31%, 100% 87%, 76% 100%, 39% 100%, 0 93%, 0 0);
+    clip-path: polygon(18% 0, 45% 31%, 86% 37%, 100% 31%, 100% 87%, 76% 100%, 39% 100%, 0 93%, 0 0);
+    z-index: -1;
+    background: linear-gradient(rgba(44, 62, 80, .9), rgba(44, 62, 80, 1));
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #f6f6f6;
+}
+
+#title-halaman h1 {
+    margin-top: 140px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#title-halaman p {
+    font-size: 22px;
+}
+
+#detail-produk .produk-umum {
+    position: relative;
+    display: grid;
+    grid-template-columns: 35% 1fr max-content;
+    grid-template-rows: min-content 1fr min-content;
+    grid-gap: 15px;
+    -webkit-clip-path: polygon(27% 1%, 66% 5%, 82% 0, 100% 4%, 100% 96%, 73% 100%, 34% 96%, 17% 100%, 0 96%, 0 5%);
+    clip-path: polygon(27% 1%, 66% 5%, 82% 0, 100% 4%, 100% 96%, 73% 100%, 34% 96%, 17% 100%, 0 96%, 0 5%);
+    background: linear-gradient(rgba(44, 62, 80, .9), rgba(44, 62, 80, 1));
+    background-position: center;
+    background-size: cover;
+    padding: 10px
+}
+
+#detail-produk h2 {
+    text-align: center;
+    font-size: 26px;
+    color: #f6f6f6;
+    margin-top: 70px;
+}
+
+.nama-produk h3 {
+    font-size: 22px;
+    color: #f6f6f6;
+    text-align: center;
+}
+
+.keterangan-produk h3 {
+    font-size: 20px;
+    color: #f6f6f6;
+}
+
+.nama-produk p {
+    font-size: 20px;
+    color: #f6f6f6;
+    text-align: center;
+}
+
+.nama-produk ul li {
+    list-style-type: none;
+    float: left;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+.keterangan-produk p {
+    font-size: 14px;
+    color: #f6f6f6;
+    text-align: justify
+}
+
+.keterangan-produk ul {
+    color: #f6f6f6
+}
+
+.keterangan-produk ul li {
+    font-size: 14px
+}
+
+#informasi {
+    margin-top: 80px;
+}
+
+#informasi .container {
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-auto-flow: dense;
+    grid-gap: 10px;
+    text-align: center;
+    padding: 15px;
+}
+
+#informasi h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.emblem-tos {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.emblem-tos img {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.fasilitas {
+    text-align: right
+}
+
+.fasilitas p {
+    font-size: 12px;
+    border-bottom: 1px solid #000;
+    line-height: 2;
+    font-weight: 600;
+    padding-left: 5px;
+}
+
+.ketentuan {
+    text-align: left
+}
+
+.ketentuan p {
+    font-size: 12px;
+    border-bottom: 1px solid #000;
+    line-height: 2;
+    font-weight: 600;
+    padding-right: 5px;
+}
+
+@media only screen and (min-width :320px) and (max-width :479px) {
+    header #logo img {
+        width: 125px;
+        margin-top: 20px
+    }
+
+    .open-menu {
+        float: right
+    }
+
+    .open-menu button {
+        padding: 4px;
+    }
+
+    .open-menu button p {
+        font-size: 11px;
+        font-weight: 600;
+    }
+
+    #myHeader-home nav ul {
+        margin-top: 50px
+    }
+
+    #myHeader-home nav ul li {
+        padding-bottom: 10px;
+        padding-right: 0;
+        margin-bottom: 5px;
+        border-bottom: 2px solid #f6f6f6;
+        border-bottom-right-radius: 50px 80px
+    }
+
+    #myHeader-home nav ul li a {
+        color: #f6f6f6;
+        padding: 0 15px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    #myHeader-home .dropdown-content {
+        position: absolute;
+        margin-top: 15px;
+        background-color: #f9f9f9;
+        min-width: 180px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+        padding: 8px 10px;
+        z-index: 1
+    }
+
+    #myHeader-home .dropdown-content a {
+        color: #000 !important;
+        padding: 8px 10px;
+        text-decoration: none;
+        display: block;
+        font-size: 12px
+    }
+
+    #myHeader nav ul {
+        display: none
+    }
+
+    .sticky #logo img {
+        width: 135px;
+        float: left;
+        margin-top: 0
+    }
+
+    .sticky nav ul {
+        display: none
+    }
+
+    .sticky .open-menu {
+        float: right
+    }
+
+    #banner h1 {
+        margin-top: 300px;
+        font-size: 30px;
+        margin-bottom: 10px
+    }
+
+    #banner p {
+        font-size: 12px;
+    }
+
+    #banner .p2 {
+        font-size: 10px !important
+    }
+
+    #banner a {
+        font-size: 12px
+    }
+
+    #client {
+        height: 600px
+    }
+
+    #client h1 {
+        font-size: 25px
+    }
+
+    #product .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-column-gap: 10px;
+        grid-auto-flow: dense;
+        grid-row-gap: 5px;
+        padding: 5px
+    }
+
+    #product img {
+        width: 200px
+    }
+
+    #tamu .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-column-gap: 10px;
+        grid-auto-flow: dense;
+        grid-row-gap: 5px;
+        padding: 5px
+    }
+
+    #tamu img {
+        width: 200px
+    }
+
+    #contact {
+        width: 100%;
+        height: auto;
+        position: relative;
+        clip-path: polygon(40% 0, 80% 4%, 100% 3%, 100% 90%, 73% 100%, 32% 99%, 0 100%, 0 60%, 0 35%, 0 0);
+        z-index: -1;
+        background: linear-gradient(rgba(44, 62, 80, .9), rgba(44, 62, 80, 1));
+        background-position: top;
+        background-size: cover;
+        background-attachment: fixed;
+        top: 0;
+        text-align: center;
+        color: #f6f6f6
+    }
+
+    #contact .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-auto-flow: dense;
+        grid-column-gap: 10px;
+        padding: 5px
+    }
+
+    #contact .box-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-auto-flow: dense;
+        grid-column-gap: 10px;
+        padding: 5px;
+        text-align: left
+    }
+
+    #contact h1 {
+        margin-top: 35px;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 5px
+    }
+
+    footer {
+        -webkit-clip-path: polygon(56% 0, 80% 3%, 100% 0, 100% 100%, 81% 98%, 50% 100%, 35% 98%, 0 100%, 0 0, 37% 2%);
+        clip-path: polygon(56% 0, 80% 3%, 100% 0, 100% 100%, 81% 98%, 50% 100%, 35% 98%, 0 100%, 0 0, 37% 2%)
+    }
+
+    footer img {
+        margin-top: 10px
+    }
+
+    footer .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-auto-flow: dense;
+        grid-column-gap: 10px;
+        padding: 5px
+    }
+
+    #title-halaman h1 {
+        font-size: 30px;
+    }
+
+    #detail-produk .produk-umum {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-auto-flow: dense;
+        grid-column-gap: 10px;
+        padding: 5px
+    }
+
+    #detail-produk h1 {
+        margin-top: 50px
+    }
+
+    #informasi .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-auto-flow: dense;
+        grid-column-gap: 10px;
+        padding: 5px
+    }
+
+    .emblem-tos {
+        display: none
+    }
+
+    .fasilitas {
+        text-align: left
+    }
+}
+
+@media (min-width:568px) {
+    #myHeader-home .open-menu {
+        display: none
+    }
+
+    #myHeader-home .sticky .open-menu {
+        display: none
+    }
+}
+
+@media (min-width:1025px) {
+    #myHeader .open-menu {
+        display: none
+    }
+
+    #myHeader .sticky .open-menu {
+        display: none
+    }
+}
+
+@media (min-width:569px) and (max-width:794px) {
+    #myHeader-home nav ul {
+        margin-top: 50px
+    }
+
+    #myHeader-home nav ul li {
+        padding-bottom: 10px;
+        padding-right: 0;
+        margin-bottom: 5px;
+        border-bottom: 2px solid #f6f6f6;
+        border-bottom-right-radius: 50px 80px
+    }
+
+    #myHeader-home nav ul li a {
+        color: #f6f6f6;
+        padding: 0 15px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    #myHeader-home .dropdown-content {
+        position: absolute;
+        margin-top: 15px;
+        background-color: #f9f9f9;
+        min-width: 180px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+        padding: 8px 10px;
+        z-index: 1
+    }
+
+    #myHeader-home .dropdown-content a {
+        color: #000 !important;
+        padding: 8px 10px;
+        text-decoration: none;
+        display: block;
+        font-size: 12px
+    }
+
+    #myHeader nav ul {
+        display: none
+    }
+
+    #myHeader .open-menu {
+        float: right
+    }
+
+    .open-menu button {
+        padding: 4px;
+    }
+
+    .open-menu button p {
+        font-size: 11px;
+        font-weight: 600;
+    }
+
+    .sticky nav ul {
+        list-style-type: none;
+        float: right;
+        width: auto;
+        margin-top: 15px
+    }
+
+    .sticky nav ul li {
+        float: left;
+        border-bottom: 0;
+        padding-bottom: 0;
+        margin-bottom: 0
+    }
+
+    .sticky nav ul li a {
+        color: #f6f6f6;
+        font-size: 12px;
+        padding: 0 8px 0 0
+    }
+
+    #contact {
+        width: 100%;
+        height: auto;
+        position: relative;
+        clip-path: polygon(40% 0, 80% 4%, 100% 3%, 100% 90%, 73% 100%, 32% 99%, 0 100%, 0 60%, 0 35%, 0 0);
+        z-index: -1;
+        background: linear-gradient(rgba(44, 62, 80, .9), rgba(44, 62, 80, 1));
+        background-position: top;
+        background-size: cover;
+        background-attachment: fixed;
+        top: 0;
+        text-align: center;
+        color: #f6f6f6
+    }
+
+    #contact h1 {
+        text-align: center
+    }
+
+    .emblem-tos img {
+        width: 100px
+    }
+}
+
+@media (min-width:795px) and (max-width:1024px) {
+    header nav {
+        padding: 10px;
+        margin-right: 10px
+    }
+
+    header nav ul {
+        list-style-type: none;
+        float: right
+    }
+
+    header nav ul li {
+        float: left;
+        border-bottom: 2px solid #000;
+        border-bottom-left-radius: 50px 20px;
+        padding-bottom: 5px;
+        margin-left: 0
+    }
+
+    header nav ul li a {
+        color: #000;
+        padding: 0 15px;
+        font-size: 12px;
+        font-weight: 700
+    }
+
+    header #logo img {
+        width: 250px;
+        margin: 0
+    }
+
+    header .open-menu {
+        display: none
+    }
+
+    #contact {
+        width: 100%;
+        height: auto;
+        position: relative;
+        clip-path: polygon(40% 0, 80% 4%, 100% 3%, 100% 90%, 73% 100%, 32% 99%, 0 100%, 0 60%, 0 35%, 0 0);
+        z-index: -1;
+        background: linear-gradient(rgba(44, 62, 80, .9), rgba(44, 62, 80, 1));
+        background-position: top;
+        background-size: cover;
+        background-attachment: fixed;
+        top: 0;
+        text-align: center;
+        color: #f6f6f6
+    }
+
+    .emblem-tos img {
+        width: 150px
+    }
+}

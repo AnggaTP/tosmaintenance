@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Developing by Ahmad Navis Zarkasy (TOS IT Development) -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Info Event Organizer Bersama TOS ADVENTURE Pacet Mojokerto Jawa Timur</title>
+    <meta name="description" content="TOS Adventure memiliki divisi Event Organizer yang siap mensupport segala kebutuhan acara anda. Segera planningkan acara & event anda bersama kami" />
+    <meta name="keywords" content="rafting, outbound, rafting pacet, rafting mojokerto, rafting jawa timur, outbound pacet, outbound mojokerto, outbound jawa timur, rafting terdekat, outbound terdekat, wisata pacet, wisata mojokerto, wisata jawa timur"/>
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="language" content="indonesia">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="shortcut icon" type="image/png" href="img/new_tos.png"/>
+    
+</head>
+<body>
+    <!-- header -->
+    <?php include "header.php" ?>
+    <!-- end header -->
+
+    <!-- title halaman -->
+    <section id="title-halaman">
+        <div class="container">
+            <h1>Info Event Organizer TOS</h1>
+        </div>
+    </section>
+    <!-- end title halaman -->
+
+
+   <!-- client -->
+   <section id="client">
+        <div class="container">
+            <h2>Anda membutuhkan Konsep yang menarik dan kreatif untuk acara/event anda?</h2>
+            <p> TOS Adventure memiliki divisi khusus di bidang EVENT ORGANIZER. Dengan team yang profesional kami akan memastikan event/ acara anda berjalan dengan lancar dan menarik dipadu konsep yang kreatif. Jangan ragu segera percayakan segala acara/event anda,  hubungi kami untuk informasi yang lebih lanjut.</p>
+            <button class="btn-segar"> <strong>Selengkapnya</strong> </button>
+            <button onclick="window.location.href='#contact'"> <strong>Hubungi Kami</strong> </button>
+        </div>
+    </section>
+
+    <!-- end client -->
+
+    <!-- produk lain -->
+    <?php include "produk_lain.php"?>
+    <!-- end produk lain -->
+
+    <!-- Contact -->
+    <?php include "detail_kontak.php" ?>
+    <!-- end Contact -->
+
+    <!-- footer -->
+    <?php include "footer.php" ?>
+    <!-- end footer -->
+
+<script>
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    
+
+    function myFunction() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+        
+    } else {
+        header.classList.remove("sticky");
+        
+    }
+    }
+
+    function openSlideMenu(){
+        document.getElementById("mobile-menu").style.width = '250px';
+    }
+
+    function closeSlideMenu(){
+        document.getElementById("mobile-menu").style.width = '0';
+    }
+
+    
+</script>
+
+</body>
+</html>
