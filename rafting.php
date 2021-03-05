@@ -59,7 +59,7 @@
                     <p>
                         <ul>
                             <li><a href="#informasi" class="btn-biru">Fasilitas & Ketentuan</a></li>
-                            <li><a href="#contact" class="btn-utama">Reservasi Sekarang</a></li>
+                            <li><a href="reservasi_online.php" class="btn-utama">Reservasi Sekarang</a></li>
                         </ul>
                     </p>
                 </div>

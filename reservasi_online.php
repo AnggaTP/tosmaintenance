@@ -21,13 +21,50 @@
 
 <body>
 
+<!-- header -->
 <?php include "header.php"?>
+<!-- end header -->
+
+<!-- title halaman -->
+<section id="title-halaman">
+    <div class="container">
+        <h1>Reservasi</h1>
+    </div>
+</section>
+<!-- end title halaman -->
 
 <section id="kosong">
-
 </section>
 
 <?php include "footer.php"?>
+
+<script>
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    
+
+    function myFunction() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+        
+    } else {
+        header.classList.remove("sticky");
+        
+    }
+    }
+
+    function openSlideMenu(){
+        document.getElementById("mobile-menu").style.width = '250px';
+    }
+
+    function closeSlideMenu(){
+        document.getElementById("mobile-menu").style.width = '0';
+    }
+
+    
+</script>
 
 </body>
 </html>
