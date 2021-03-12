@@ -33,7 +33,28 @@
 </section>
 <!-- end title halaman -->
 
-<section id="kosong">
+<section id="form">
+    <div class = "container">
+        <div class = "div-form">
+            <form action="">
+                <h1>Silahkan Mengisi Form Berikut</h1>
+                <label>
+                    Nama :
+                    <br><input type="text" name="" id="">
+                </label>
+                <br>
+                <label>
+                    No. Telp :
+                    <br><input type="text" name="" id="">
+                </label>
+                <br>
+                <label>
+                    Email :
+                    <br><input type="email" name="" id="">
+                </label>
+            </form>
+        </div>
+    </div>
 </section>
 
 <?php include "footer.php"?>
