@@ -39,7 +39,10 @@
             <form action="">
                 <h1>Silahkan Mengisi Form Berikut</h1>
                 <label>
-                    Namaku :
+                    Namaku
+                    
+                    
+                     :
                     <br><input type="text" name="" id="">
                 </label>
                 <br>

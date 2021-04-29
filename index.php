@@ -217,7 +217,7 @@
         <div class="line"><img src="img/line.png" alt="garis batas"></div>
         <p>TOS Souvenir menyediakan berbagai macam souvenir untuk anda bawa pulang sebagai kenang - kenangan dan hadiah bagi keluarga dan saudara di Rumah</p>
         <div class="container">
-            <button onclick="window.location.href='TOS-Adventure-Pacet'">Cek Sekarang</button>
+            <button onclick="window.location.href='shop.php'">Cek Sekarang</button>
         </div>
     </section>
     <!-- end shop -->

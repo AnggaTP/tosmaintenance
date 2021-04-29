@@ -63,12 +63,13 @@ button {
 .not-active {
     pointer-events: none;
     cursor: default;
-    text-decoration: none
+    text-decoration: none;
 }
 
 .line {
     text-align: center;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .line img {
