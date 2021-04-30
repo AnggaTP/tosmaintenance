@@ -2,7 +2,22 @@
     session_start();
 
     $connect = mysqli_connect("localhost", "root", "", "product_db");
+
     $currPage = 1;
+    $result_per_page = 8;
+    $query = "SELECT * FROM product_list";
+    $result = mysqli_query($connect, $query);
+    $total_data = mysqli_num_rows($result);
+    $number_of_pages = ceil($total_data/$result_per_page);
+
+    if(!isset($_GET['page'])){
+        $page = 1;
+    }else{
+        $page = $_GET['page'];
+        $currPage = $_GET['page'];
+    }
+
+    $this_page_first_result = ($page - 1)*$result_per_page;
 ?>
 
 <!DOCTYPE html>
@@ -44,21 +59,6 @@
         </div>
         <div class="container">
             <?php
-                $result_per_page = 8;
-                $query = "SELECT * FROM product_list";
-                $result = mysqli_query($connect, $query);
-                $total_data = mysqli_num_rows($result);
-                $number_of_pages = ceil($total_data/$result_per_page);
-
-                if(!isset($_GET['page'])){
-                    $page = 1;
-                }else{
-                    $page = $_GET['page'];
-                    $currPage = $_GET['page'];
-                }
-
-                $this_page_first_result = ($page - 1)*$result_per_page;
-
                 $query = "SELECT * FROM product_list LIMIT " . $this_page_first_result . "," . $result_per_page;
                 $result = mysqli_query($connect, $query);
 
@@ -67,23 +67,26 @@
                     while($row = mysqli_fetch_array($result))
                     {
             ?>
-                    <div class="card">
-                        <?php echo "<img src='data:img/product/;base64,".base64_encode($row["product_img"])."'/>";?>
-                        <div class="card-details">
-                            <p id='title-product'><?php echo $row["product_name"]; ?></p>
-                            <p id='product-price'><?php echo "Rp. " . $row["product_price"]; ?></p>
+                    <form method="post" action="cart.php?action=add&id=<?php echo $row["productID"];?>">
+                        <div class="card">
+                            <?php echo "<img src='data:img/product/;base64,".base64_encode($row["product_img"])."'/>";?>
+                            <div class="card-details">
+                                <p id='title-product'><?php echo $row["product_name"]; ?></p>
+                                <p id='product-price'><?php echo "Rp. " . $row["product_price"]; ?></p>
+                            </div>
+                            <div class="card-button">
+                                <p>
+                                <button type="submit" name="add_cart"> Tambahkan ke Keranjang</button>
+                                </p>
+                            </div>
                         </div>
-                        <div class="card-button">
-                            <p>
-                            <button id="cart">Keranjang</button>
-                            </p>
-                        </div>
-                    </div>
+                    </form>
             <?php
                     }
                 }
             ?>
         </div>
+
         <div class="center-pagination">
             <div class="pagination">  
             <?php
@@ -96,6 +99,7 @@
             ?>
             </div>
         </div>
+
     </section>
     <!-- end product display -->
 

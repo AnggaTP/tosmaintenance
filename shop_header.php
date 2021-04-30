@@ -11,13 +11,13 @@
             </button>
         </span>
         <ul>
-            <li><a href="TOS-Adventure-Pacet">Home</a></li>
-            <li><a href="#"><span class="fa fa-shopping-cart fa-s "></span></a></li>
+            <li><a href="TOS-Adventure-Pacet" id="home-shop">Home</a></li>
+            <li><a href="#" id="home-shop"><span class="fa fa-shopping-cart"></span></a></li>
         </ul>
 
 
     </nav>
-    </header>
+</header>
 
     <div id="mobile-menu" class="side-menu">
         <button class="btn-close" onclick="closeSlideMenu()">&times;</button>
